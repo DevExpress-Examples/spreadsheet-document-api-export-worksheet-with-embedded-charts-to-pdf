@@ -1,3 +1,8 @@
+<!-- default file list -->
+*Files to look at*:
+
+* [Program.cs](./CS/WorksheetChartsExportPDF/Program.cs) (VB: [Program.vb](./VB/WorksheetChartsExportPDF/Program.vb))
+<!-- default file list end -->
 # How to export a worksheet with embedded charts to PDF
 
 
