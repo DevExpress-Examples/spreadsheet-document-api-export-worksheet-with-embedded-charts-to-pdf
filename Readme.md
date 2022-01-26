@@ -8,7 +8,7 @@
 
 * [Program.cs](./CS/WorksheetChartsExportPDF/Program.cs) (VB: [Program.vb](./VB/WorksheetChartsExportPDF/Program.vb))
 <!-- default file list end -->
-# How to export a worksheet with embedded charts to PDF
+# Spreadsheet Document API - Export a Worksheet with Embedded Charts to PDF
 
 
 To export a worksheet to PDF, use the [Workbook.ExportToPdf](https://documentation.devexpress.com/OfficeFileAPI/DevExpress.Spreadsheet.Workbook.ExportToPdf.overloads) method.
