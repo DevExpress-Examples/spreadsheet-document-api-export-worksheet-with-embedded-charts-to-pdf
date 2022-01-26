@@ -1,23 +1,22 @@
-﻿#Region "#namespaces"
+'#Region "#namespaces"
 Imports DevExpress.Spreadsheet
-Imports DevExpress.XtraPrinting
 Imports DevExpress.XtraSpreadsheet.Services
 Imports DevExpress.XtraSpreadsheet.Services.Implementation
-#End Region ' #namespaces
 
+'#End Region  ' #namespaces
 Namespace WorksheetChartsExportPDF
-    Friend Class Program
-        Shared Sub Main(ByVal args() As String)
-'            #Region "#ExportToPDF"
-            Dim workbook As New Workbook()
 
+    Friend Class Program
+
+        Shared Sub Main(ByVal args As String())
+'#Region "#ExportToPDF"
+            Dim workbook As Workbook = New Workbook()
             'Register required services. 
             workbook.AddService(GetType(IChartControllerFactoryService), New ChartControllerFactoryService())
             workbook.AddService(GetType(IChartImageService), New ChartImageService())
-
             workbook.LoadDocument("testDocument.xlsx")
             workbook.ExportToPdf("resultingDocument.pdf")
-'            #End Region ' #ExportToPDF
+'#End Region  ' #ExportToPDF
             System.Diagnostics.Process.Start("resultingDocument.pdf")
         End Sub
     End Class
